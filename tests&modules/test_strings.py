@@ -7,7 +7,7 @@ from modules.strings import generate_string, len_of_string
 class TestStrings(unittest.TestCase):
     def test_generateStr(self):
         """
-        Test the Function generateStr from strings.py
+        Test the Function generate_string from strings.py
         """
         char = "t"
         data = 5
@@ -16,7 +16,7 @@ class TestStrings(unittest.TestCase):
 
     def test_lenOFStr(self):
         '''
-        Test the Function lenOfStr from strings.py
+        Test the Function len_of_string from strings.py
         '''
         char = 'testdata'
         result = len_of_string(string=char)
