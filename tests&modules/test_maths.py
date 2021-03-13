@@ -1,5 +1,5 @@
 import unittest
-from modules.maths import Factorial, Fibonacci
+from modules.maths import return_fibonacci_num, return_factorial_of_num
 
 # A test class for maths.py
 
@@ -10,7 +10,7 @@ class TestMaths(unittest.TestCase):
         Test the Function Fibonacci from maths.py
         """
         data = 9
-        result = Fibonacci(data)
+        result = return_fibonacci_num(data)
         self.assertEqual(result, {'9th Fibonacci number is': 34})
 
     def test_Factorial(self):
@@ -18,7 +18,7 @@ class TestMaths(unittest.TestCase):
         Test the Function Factorial from maths.py
         '''
         data = 3
-        result = Factorial(data)
+        result = return_factorial_of_num(data)
         self.assertEqual(result, {'The factorial of 3 is': 6})
 
 
