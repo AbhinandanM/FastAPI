@@ -27,7 +27,7 @@ async def root():
 
 
 @app.get("/returnFibonacci/")
-def Fibonacci(n: int):
+def return_fibonacci_num(n: int):
     try:
         if n < 1 or n > 100:
             return {'Error': "The number is out of bounds"}
@@ -47,7 +47,7 @@ def Fibonacci(n: int):
 
 
 @app.get("/returnFactorial/")
-def Factorial(n: int):
+def return_factorial_of_num(n: int):
     try:
         if n < 0:
             return {'Error': "The number is invalid"}
