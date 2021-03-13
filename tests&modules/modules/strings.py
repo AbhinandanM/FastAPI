@@ -28,7 +28,9 @@ async def root():
 
 
 @app.get("/strings/generateString/")
-def generateStr(char: str = 'i', count: int = 1):
+def generate_string(
+        char: str = 'i',
+        count: int = 1):
     try:
         String = char*count
         return {"String": String}
@@ -39,7 +41,8 @@ def generateStr(char: str = 'i', count: int = 1):
 
 
 @app.get("/strings/getLenOfString/")
-def lenOfStr(string: str = 'Welcome'):
+def len_of_string(
+        string: str = 'Welcome'):
     try:
         Length = len(string)
         return {"String length": Length}
