@@ -7,7 +7,7 @@ from modules.maths import return_fibonacci_num, return_factorial_of_num
 class TestMaths(unittest.TestCase):
     def test_Fibonacci(self):
         """
-        Test the Function Fibonacci from maths.py
+        Test the Function return_fibonacci_num from maths.py
         """
         data = 9
         result = return_fibonacci_num(data)
@@ -15,7 +15,7 @@ class TestMaths(unittest.TestCase):
 
     def test_Factorial(self):
         '''
-        Test the Function Factorial from maths.py
+        Test the Function return_factorial_of_num from maths.py
         '''
         data = 3
         result = return_factorial_of_num(data)
