@@ -13,7 +13,8 @@ This project uses unittest to define tests.
 **Run** python test_maths.py/test_strings.py
 
 #Project Tree
->FastAPI
+<pre>
+FastAPI
 ├───tests&modules
 │   ├───modules
 |   |   ├────maths.py
@@ -23,3 +24,4 @@ This project uses unittest to define tests.
 │   ├────test_strings.py
 │   └───__pycache__
 └───requirements.txt
+</pre>
